@@ -201,7 +201,14 @@ function retornarPerimetro(lado){
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-
+  var areaDelTriangulo = basetriangulo * alturatriangulo; {
+    areaDelTriangulo;
+    areaDelTriangulo = 0;
+    var basetriangulo = 20;
+    var alturatriangulo = 30;
+    areaDelTriangulo = basetriangulo*alturatriangulo;
+    console.log("El Area del Triangulo es equivalente a la multiplicacion de la base "+basetriangulo+" por su altura "+alturatriangulo+" el cual de como resultado "+areaDelTriangulo+"");
+  }
 }
 
 
