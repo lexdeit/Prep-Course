@@ -172,6 +172,13 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
+   var area_rectangulo = base * altura; {
+    area_rectangulo;
+    area_rectangulo = 0;
+    var base = 10;
+    var altura = 20;
+    area_rectangulo = base*altura;
+    console.log("El area de un rectangulo de base"+base+" y altura "+altura+" es igual a "+area_rectangulo+"");}
 }
 
 
