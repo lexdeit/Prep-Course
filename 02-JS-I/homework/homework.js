@@ -124,7 +124,7 @@ function elevar(num, exponent) {
   num5;
   var yx = 3;
   yx;
-  return console.log(Math.pow(num5, yx));
+ // return console.log(Math.pow(num5, yx));
 }
 
 function redondearNumero(num) {
