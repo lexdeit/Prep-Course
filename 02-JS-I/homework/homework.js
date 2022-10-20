@@ -120,7 +120,11 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  return Math.powe(num, 7);
+  var num5 = 7;
+  num5;
+  var yx = 3;
+  yx;
+  return console.log(Math.pow(num5, yx));
 }
 
 function redondearNumero(num) {
@@ -165,7 +169,7 @@ function combinarNombres(nombre32, apellido11) {
   combinarNombres; {
     var nombre32 = "Emmanuel";
     nombre32;
-    var apellido11 = "Villavicencio";
+    var apellido11 = " Villavicencio";
     apellido11;
     console.log(""+combinarNombres+"");
   }
@@ -244,7 +248,12 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  
+  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+  console.log('Es vocal')
+  } else if (letra !== 1) {
+    console.log('Datos incorrecto')
+  }
+  var letra = "a" || "e" || "i" || "o" || "u";
 }
 
 
