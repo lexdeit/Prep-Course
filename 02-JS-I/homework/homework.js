@@ -138,7 +138,9 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  
+  var numeroRandom = Math.random(0, 1); {
+  numeroRandom;
+  console.log("Tu numero Random; "+numeroRandom+"");}
 }
 
 function esPositivo(numero) {
@@ -155,18 +157,29 @@ function agregarSimboloExclamacion(str) {
   // Tu código:
 }
 
-function combinarNombres(nombre, apellido) {
+function combinarNombres(nombre32, apellido11) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  ('Emmanuel' + ' Villavicencio')
+  var combinarNombres = ("Soy "+nombre32+","+apellido11+""); 
+  combinarNombres; {
+    var nombre32 = "Emmanuel";
+    nombre32;
+    var apellido11 = "Villavicencio";
+    apellido11;
+    console.log(""+combinarNombres+"");
+  }
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var Martin = 'Hola Martin!'; //Nombre de la persona en cuestion
+  var obtenerSaludo = ("Hola "+nombre12+""); 
+  obtenerSaludo; {
+  var nombre12 = "Martin";
+  console.log(""+obtenerSaludo+"");
+  }
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
