@@ -152,7 +152,11 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  
+  if(numero > 1) {
+    return "Es positivo" (console.log ("Es positivo"));
+  }
+  if(numero < -0){
+    return "Es negativo" (console.log ("Es negativo"));}
 }
 
 function agregarSimboloExclamacion(str) {
@@ -244,17 +248,18 @@ function deEuroAdolar(euro){
 
 function esVocal(letra){
   //Escribe una función que reciba una letra y, si es una vocal, muestre el mensaje “Es vocal”. 
-  //Verificar si el usuario ingresó un string de más de un carácter, en ese caso, informarle 
+  //Verificar si el usuario ingresó un string de más de un carácter y, en ese caso, informarle 
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
-  // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-  if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
-  console.log('Es vocal')
-  } else if (letra !== 1) {
-    console.log('Datos incorrecto')
+  if(letra.length > 1){
+    return "Dato incorrecto"
   }
-  var letra = "a" || "e" || "i" || "o" || "u";
+  if(letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
+    return "Es vocal"
+  }
+  return "Dato incorrecto"
 }
+
 
 
 
