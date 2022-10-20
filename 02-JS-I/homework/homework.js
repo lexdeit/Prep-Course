@@ -185,7 +185,16 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  
+  var retornarPerimetro = ladoa + ladob + ladoc + ladod; {
+    retornarPerimetro;
+    retornarPerimetro = 0;
+    var ladoa = 12;
+    var ladob = 12;
+    var ladoc = 12;
+    var ladod = 12;
+    retornarPerimetro = ladoa+ladob+ladoc+ladod;
+    console.log("El perimetro es la suma de todos los lados el cual es equivalente a "+retornarPerimetro+"");
+  }
 }
 
 
