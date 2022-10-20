@@ -216,7 +216,12 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  
+  var Conversion = cantidad/dolar1; {
+    Conversion;
+    var cantidad = 560;
+    var dolar1 = 1.20; // Cada Euro es 1.20 Dolares - Cada dolar es 0.84 Euros
+    console.log("La conversion de 560 Euros es equivalente en Dolares a "+Conversion+"");
+  }
 }
 
 
