@@ -80,34 +80,49 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
-  if ( x < 90 ) {true;} else { false;}
+  if (num < 90) {
+    return true
+  } else {return false
+  }
 }
 
 function mayorQueCincuenta(num) {
   // Devuelve "true" si el argumento de la función "num" es mayor que cincuenta
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (x > 50) {true;} else {false;}
+  if (num > 50) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function obtenerResto(x, y) {
   // Obten el resto de la división de "x" entre "y"
   // Tu código:
-  x % y; 
+  return (x % y);
 }
 
 function esPar(num) {
   // Devuelve "true" si "num" es par
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (num % 2 === 2) {true;} else {false;}
+  if (num % 2 == 0) {
+    return true
+  } else {
+    return  false
+  }
 }
 
 function esImpar(num) {
   // Devuelve "true" si "num" es impar
   // De lo contrario, devuelve "false"
   // Tu código:
-  if(num % 2 === 1) {true;} else {false;}
+  if (num % 2 != 0) {
+    return true
+  } else {
+    return false
+  }
 }
 
 function elevarAlCuadrado(num) {
@@ -126,33 +141,25 @@ function elevarAlCubo(num) {
 function elevar(num, exponent) {
   // Devuelve el valor de "num" elevado al exponente dado en "exponent"
   // Tu código:
-  var num5 = 7;
-  num5;
-  var yx = 3;
-  yx;
- // return console.log(Math.pow(num5, yx));
+  return Math.pow(num, exponent);
 }
 
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  numero_entero = Math.round(17.69);
+  return Math.round(num);
 }
 
 function redondearHaciaArriba(NumeroRedondeado) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  var numero_Redondeado_hacia_arriba = Math.round(20.49);
-  numero_Redondeado_hacia_arriba;
-  return console.log("El calculo es el siguiente "+numero_Redondeado_hacia_arriba+"");
+  return Math.ceil(NumeroRedondeado); 
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  var numeroRandom = Math.random(0, 1); {
-  numeroRandom;
-  console.log("Tu numero Random; "+numeroRandom+"");}
+  return (Math.round(Math.random()));
 }
 
 function esPositivo(numero) {
@@ -160,95 +167,58 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if(numero > 1) {
-    return "Es positivo" (console.log ("Es positivo"));
-  }
-  if(numero < -0){
-    return "Es negativo" (console.log ("Es negativo"));}
-}
+  if (Math.sign(numero >= 1)) return console.log("Es positivo"); 
+  if (Math.sign(numero <= -1)) return console.log("Es negativo");
+  if (numero == 0) return false;
+} 
 
 function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
+  return (console.log(str + "!"));
 }
 
-function combinarNombres(nombre32, apellido11) {
+function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  {
-    console.log("Hola" + nombre32 + apellido11);
-  }
-  nombre32 = 'Emmanuel';
-  apellido11 = 'Villavicencio';
-  logHola('Martin');
-  }
+  return (console.log(""+nombre+""+" "+apellido+""));
+}
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  var obtenerSaludo = ("Hola "+nombre12+""); 
-  obtenerSaludo; {
-  var nombre12 = "Martin";
-  console.log(""+obtenerSaludo+"");
-  }
+  return (console.log("Hola "+nombre+"!"));
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-   var obtenerAreaRectangulo = ancho * alto; {
-    obtenerAreaRectangulo;
-    obtenerAreaRectangulo = 0;
-    var ancho = 10;
-    var alto = 20;
-    obtenerAreaRectangulo = ancho*alto;
-    console.log("El area de un rectangulo de base"+ancho+" y altura "+alto+" es igual a "+obtenerAreaRectangulo+"");}
+  return (console.log(alto * ancho));
 }
 
 
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
-  //Escribe tu código aquí
-  var retornarPerimetro = ladoa + ladob + ladoc + ladod; {
-    retornarPerimetro;
-    retornarPerimetro = 0;
-    var ladoa = 12;
-    var ladob = 12;
-    var ladoc = 12;
-    var ladod = 12;
-    retornarPerimetro = ladoa+ladob+ladoc+ladod;
-    console.log("El perimetro es la suma de todos los lados el cual es equivalente a "+retornarPerimetro+"");
-  }
+  //Escribe tu código aquí:
+  return (console.log(lado * 4));
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
-  //Escribe tu código aquí
-  var areaDelTriangulo = basetriangulo * alturatriangulo; {
-    areaDelTriangulo;
-    areaDelTriangulo = 0;
-    var basetriangulo = 10;
-    var alturatriangulo = 20;
-    areaDelTriangulo = basetriangulo*alturatriangulo;
-    console.log("El Area del Triangulo es equivalente a la multiplicacion de la base "+basetriangulo+" por su altura "+alturatriangulo+" el cual de como resultado "+areaDelTriangulo+"");
-  }
+  //Escribe tu código aquí:
+  return (console.log(base * altura / 2));
 }
 
 
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
-  //Escribe tu código aquí
-  var Conversion = cantidad/dolar1; {
-    Conversion;
-    var cantidad = 560;
-    var dolar1 = 1.20; // Cada Euro es 1.20 Dolares - Cada dolar es 0.84 Euros
-    console.log("La conversion de 560 Euros es equivalente en Dolares a "+Conversion+"");
-  }
+  //Escribe tu código aquí:
+  return (console.log(euro / 0.84));
 }
 
 
