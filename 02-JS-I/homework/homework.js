@@ -35,7 +35,9 @@ function suma(x, y) {
   // "x" e "y" son números
   // Suma "x" e "y" juntos y devuelve el valor
   // Tu código:
-  1 + 8; 
+  var x = 4;
+  var y = 3;
+  y + x; 
 }
 
 function resta(x, y) {
@@ -171,15 +173,13 @@ function combinarNombres(nombre32, apellido11) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinarNombres = ("Soy "+nombre32+","+apellido11+""); 
-  combinarNombres; {
-    var nombre32 = "Emmanuel";
-    nombre32;
-    var apellido11 = " Villavicencio";
-    apellido11;
-    console.log(""+combinarNombres+"");
+  {
+    console.log("Hola" + nombre32 + apellido11);
   }
-}
+  nombre32 = 'Emmanuel';
+  apellido11 = 'Villavicencio';
+  logHola('Martin');
+  }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
@@ -195,13 +195,13 @@ function obtenerSaludo(nombre) {
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-   var area_rectangulo = base * altura; {
-    area_rectangulo;
-    area_rectangulo = 0;
-    var base = 10;
-    var altura = 20;
-    area_rectangulo = base*altura;
-    console.log("El area de un rectangulo de base"+base+" y altura "+altura+" es igual a "+area_rectangulo+"");}
+   var obtenerAreaRectangulo = ancho * alto; {
+    obtenerAreaRectangulo;
+    obtenerAreaRectangulo = 0;
+    var ancho = 10;
+    var alto = 20;
+    obtenerAreaRectangulo = ancho*alto;
+    console.log("El area de un rectangulo de base"+ancho+" y altura "+alto+" es igual a "+obtenerAreaRectangulo+"");}
 }
 
 
@@ -227,8 +227,8 @@ function areaDelTriangulo(base, altura){
   var areaDelTriangulo = basetriangulo * alturatriangulo; {
     areaDelTriangulo;
     areaDelTriangulo = 0;
-    var basetriangulo = 20;
-    var alturatriangulo = 30;
+    var basetriangulo = 10;
+    var alturatriangulo = 20;
     areaDelTriangulo = basetriangulo*alturatriangulo;
     console.log("El Area del Triangulo es equivalente a la multiplicacion de la base "+basetriangulo+" por su altura "+alturatriangulo+" el cual de como resultado "+areaDelTriangulo+"");
   }
