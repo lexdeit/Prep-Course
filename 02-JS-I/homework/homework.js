@@ -217,8 +217,8 @@ function areaDelTriangulo(base, altura){
 function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
-  //Escribe tu código aquí:
-  return (console.log(euro / 0.84));
+  //Escribe tu código aquí: 0.84
+  return (euro * 120 / 100);
 }
 
 
