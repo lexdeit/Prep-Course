@@ -155,10 +155,10 @@ function esVerdadero(valor){
   //Escribe una función que reciba un valor booleano y retorne “Soy verdadero” 
   //si su valor es true y “Soy falso” si su valor es false.
   //Escribe tu código aquí
- if (valor = 1) {return true;}
- if (valor = 0) {return false;}
- var random = Math.round(Math.random (0 || 1))
- random; 
+  if (valor === true) {
+    return "Soy verdadero";
+  } else if (valor === false) {
+    return "Soy falso";}
 }
 
 function tablaDelSeis(){
@@ -173,7 +173,13 @@ function tablaDelSeis(){
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero.toString().length === 3) {
+    return true;
+  } else if (numero.toString().length <= 2) {
+    return false;
+  } else if (numero.toString().length >= 4) {
+    return false;
+  }
 }
 
 function doWhile(numero) {
