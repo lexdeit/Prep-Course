@@ -175,17 +175,22 @@ function tieneTresDigitos(numero){
   //Escribe tu código aquí
   if (numero.toString().length === 3) {
     return true;
-  } else if (numero.toString().length <= 2) {
+  } else if (numero.toString().length <= 2 || numero.toString().length >= 4) {
     return false;
-  } else if (numero.toString().length >= 4) {
-    return false;
-  }
+  } 
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  let a = numero;
+  let b = 0;
+  do {
+    b = b + 1;
+    a = a + 5;
+  } while (b < 8);
+  return a;
 }
 
 
