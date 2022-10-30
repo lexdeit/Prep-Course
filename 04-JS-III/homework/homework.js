@@ -3,7 +3,7 @@
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
   // Tu código:
-  return array[1];
+  return array.shift();
 } 
 
 
@@ -25,7 +25,7 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  int/integers(array.push());
+  return array,unshift('');
 }
 
 
@@ -33,7 +33,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-
+  return array.push(elemento);
 }
 
 
