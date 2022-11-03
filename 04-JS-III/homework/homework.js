@@ -19,13 +19,13 @@ function obtenerLargoDelArray(array) {
   return array.length;
 }
 
-
 function incrementarPorUno(array) {
   // "array" debe ser una matriz de enteros (int/integers)
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  return array,unshift('');
+  let nuevoArray = [  ];
+
 }
 
 
@@ -33,15 +33,17 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array[array.length] = elemento;
+  return array;
 }
-
 
 function agregarItemAlComienzoDelArray(array, elemento) {
   // Añade el "elemento" al comienzo del array
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  array[array.unshift(elemento)];
+  return array;
 }
 
 
@@ -51,6 +53,13 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  palabras[palabras];
+  let texto = "";
+  let espacio = " ";
+  espacio;
+  for (x = 0; x < palabras.length; x++) {
+    texto = texto + palabras[x] + espacio;
+  } return texto;
 }
 
 
