@@ -115,16 +115,30 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  //reduce((p,c)=>p*c);
+  var acc = 1;
+  if(arguments.length === 0) {
+    return 0;
+  } else if (arguments.length === 1) {
+    return arguments[0];
+  } else {
+         for (var i = 0; i < arguments.length; i++) {
+            acc = acc * arguments[i];
+         }
+  } return acc;
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
-  //Escribe tu código aquí
-
+  //Escribe tu código aquí:
+  var elementos = [];
+  for (var i = 0;  i<arreglo.length;  i++) {
+    if(arreglo[i] > 18) {
+         elementos++;
+    }
+  }
+  return elementos;
 }
-
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
