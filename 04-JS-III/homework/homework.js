@@ -182,14 +182,18 @@ function mesesDelAño(array) {
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
   var mesesOrdenados = [];
-  var acu = ["Marzo", "Diciembre", "Abril", "Junio", "Julio", "Noviembre", "Enero", "Mayo", "Febrero"];
   
+  //Iteracion de meses correctos uwu
   for (var i = 0; i < array.length; i++) {
     if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
-      mesesOrdenados[i] = array[i]
+      mesesOrdenados.push(array[i]);
     }
+  } if (mesesOrdenados.length < 3) {
+    return "No se encontraron los meses pedidos";
   }
-  return mesesOrdenados;
+  else  { 
+    return mesesOrdenados;
+  }
 }
 
 
@@ -197,6 +201,14 @@ function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
   //valores mayores a 100 (no incluye el 100). Finalmente devolver el nuevo array.
   // Tu código:
+  var arriba = [];
+  
+  //Iteracion de numeros mayores a 100 uwu 
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] > 100) {
+      arriba.push(array[i]);
+    }
+  } return arriba;
 }
 
 
@@ -208,6 +220,23 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
+  var nuevonumero = [];
+  var sumados = numero;
+  
+  //Iteracion limitada a 10 veces
+  for  (var y = 0; y < 10; y++){
+    sumados = sumados + 2;
+    if  (sumados === y){
+      break;
+    } else {
+    nuevonumero.push(sumados);
+    }
+  }
+  if (nuevonumero.length < 10) {
+    return "Se interrumpió la ejecución";
+  } else if (nuevonumero.length === 10) {
+    return nuevonumero;
+  }
 }
 
 
@@ -218,7 +247,18 @@ function continueStatement(numero) {
   //Cuando el número de iteraciones alcance el valor 5, no se suma en ese caso y se continua con la siguiente iteración
   //Pista: usá el statement 'continue'
   // Tu código:
-}
+  var nuevonumeroa = [];
+  var sumadosa = numero;
+  
+  //Iteracion limitada a 10 veces
+  for (var x = 0; x < 10; x++) {
+    if (x === 5) continue;
+    else  {
+      sumadosa = sumadosa + 2
+      nuevonumeroa.push(sumadosa)
+    }
+  } return nuevonumeroa;
+  }
 
 
 // No modificar nada debajo de esta línea
