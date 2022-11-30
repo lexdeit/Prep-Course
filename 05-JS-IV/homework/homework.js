@@ -34,6 +34,7 @@ function invocarMetodo (objeto, metodo) {
   // Tu código:
 
   objeto[metodo]();
+  
 }
 
 function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
