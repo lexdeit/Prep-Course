@@ -6,11 +6,12 @@ function mayuscula(nombre) {
   //Tu código:
   let a = "";
   let b = "";
+  let mayusculaa = [nombre];
 
-  for(let v = 0; v < 1; v++){a = nombre[v];}
+  mayusculaa.forEach((mayusculaa) => a += mayusculaa[0]);
   for (let i = 1; i < nombre.length; i++){b += nombre[i];}
-  return a.toUpperCase() + b;
 
+  return a.toUpperCase() + b;
 }
   
   function invocarCallback(cb) {
@@ -40,6 +41,9 @@ function forEach(array, cb) {
   // Itera sobre la matriz "array" y pasa los valores al callback uno por uno
   // Pista: Estarás invocando a `cb` varias veces (una por cada valor en la matriz)
   //Tu código:
+
+  array.forEach((elemento) => cb(elemento));
+
 }
 
 function map(array, cb) {
@@ -47,12 +51,19 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
+  let arreglob = [];
+  arreglob = array.map((elemento) => cb(elemento));
+  return arreglob;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
+  let resultadoa = [];
+
+  resultadoa = array.filter((elemento) => elemento[0] === "a");
+  return resultadoa;
 }
 
 // No modificar nada debajo de esta línea
